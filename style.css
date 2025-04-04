@@ -1,0 +1,136 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #6E7CFA, #4EC5D4); /* Smooth gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Main Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for smooth look */
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Input Field */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4EC5D4;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Button */
+button {
+    background-color: #4EC5D4;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b99b3;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset to normal on click */
+}
+
+/* Weather Info */
+#weather-info {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;
+}
+
+#weather-info h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#weather-info p {
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+/* Error Handling */
+#error-message {
+    color: #f44336;
+    font-size: 1rem;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    #weather-info h2 {
+        font-size: 1.5rem;
+    }
+
+    #weather-info p {
+        font-size: 0.9rem;
+    }
+}
